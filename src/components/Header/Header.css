@@ -1,0 +1,15 @@
+header{
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+li:not(:last-child){
+    margin-right: 30px;
+}
+li > a{
+    color: var(--primary-color);
+}

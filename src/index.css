@@ -4,18 +4,44 @@
   padding: 0;
 }
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  background-color: #242424;
+  --hours-color: #fff;
+  --minutes-color: #fff;
+  --seconds-color: #fff;
+  --primary-color: #d8d8d8;
+  --primary-color-hover: #727272;
+  --primary-background: #0c0b0b;
+  color: white;
+  background-color: var(--primary-background);
+}
+html, #root, .app{
+  height: 100%;
+}
+body {
+  font-family: Ubuntu, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  min-width: 280px;
+  height: 100%;
+  color: var(--primary-color);
+  font-weight: 600;
 }
-
-body {
-  min-width: 320px;
-  min-height: 100vh;
+main{
+  flex: 1 0 auto;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover{
+  color: var(--primary-color-hover);
+  transition: .15s color linear;
+}
+ul{
+  list-style-type: none;
 }
