@@ -1,6 +1,10 @@
 import React from 'react';
+import {useRouteError} from 'react-router-dom';
 
-const Error = () => {
+export default function NotFound() {
+    const error = useRouteError();
+    console.error(error);
+
     return (
         <div style={{
             textAlign: 'center'
@@ -10,5 +14,3 @@ const Error = () => {
         </div>
     );
 };
-
-export default Error;

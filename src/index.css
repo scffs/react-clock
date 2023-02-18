@@ -26,7 +26,6 @@ body {
   font-weight: 600;
 }
 main{
-  flex: 1 0 auto;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -44,4 +43,12 @@ a:hover{
 }
 ul{
   list-style-type: none;
+}
+@media (max-width: 380px) {
+  .clock{
+    font-size: 2rem !important;
+  }
+  .time{
+    width: 200px !important;
+  }
 }

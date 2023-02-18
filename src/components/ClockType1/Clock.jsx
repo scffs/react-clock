@@ -5,7 +5,7 @@ import './Clock.css';
 const ClockType1 = () => {
     useEffect( () => {
         setInterval(()=>{
-            setDate(getTime())
+            setDateNow(getTime())
         },1000)
 
     }, [])
@@ -23,7 +23,7 @@ const ClockType1 = () => {
         return {hours, minutes, seconds}
     }
 
-    const [dateNow, setDate] = useState(getTime())
+    const [dateNow, setDateNow] = useState(getTime())
 
     return (
         <div className="clock">

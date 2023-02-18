@@ -4,7 +4,7 @@ import './Clock.css';
 
 const ClockType2 = () => {
     return (
-        <div className="clock">
+        <div className="clock clock--second">
             soon
         </div>
     );
