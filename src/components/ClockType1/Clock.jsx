@@ -1,7 +1,8 @@
 import React from 'react';
 
+import useTime from '../../Hooks/useTime.jsx';
+
 import './Clock.css';
-import useTime from "../../Hooks/useTime.jsx";
 
 const ClockType1 = () => {
     const getTime = useTime();
