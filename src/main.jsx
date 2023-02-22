@@ -13,15 +13,17 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout />,
-        errorElement: <Layout children={<NotFound />}/>,
-    },
-    {
-        path: '/type1',
-        element: <Layout children={<ClockType1 />} />,
-    },
-    {
-        path: '/type2',
-        element: <Layout children={<ClockType2 />} />,
+        errorElement: <NotFound />,
+        children: [
+            {
+                path: '/type1',
+                element: <ClockType1 />,
+            },
+            {
+                path: '/type2',
+                element: <ClockType2 />,
+            },
+        ],
     },
 ]);
 

@@ -14,10 +14,10 @@ const Header = () => {
             React Clock
             <ul>
                 <li>
-                    <Link to="/type1">Type 1</Link>
+                    <Link to='/type1'>Type 1</Link>
                 </li>
                 <li>
-                    <Link to="/type2">Type 2</Link>
+                    <Link to='type2'>Type 2</Link>
                 </li>
             </ul>
         </header>
