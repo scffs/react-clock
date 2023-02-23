@@ -7,7 +7,9 @@ import {VscGithubAlt} from 'react-icons/vsc';
 const Footer = () => {
     return (
         <footer>
-            <VscGithubAlt />
+            <a href='https://github.com/scffs' target='_blank'>
+                <VscGithubAlt />
+            </a>
             <p>Copyright © 2023. Scoffs. All rights reserved</p>
         </footer>
     );

@@ -1,16 +1,19 @@
+/* TODO: Добавить focus- / active-эффект */
 *, *::after, *::before{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 :root {
+  /* TODO: Подобрать цвета */
   --hours-color: #fff;
   --minutes-color: #fff;
   --seconds-color: #fff;
+
   --primary-color: #d8d8d8;
   --primary-color-hover: #727272;
   --primary-background: #0c0b0b;
-  color: white;
+  color: var(--primary-color);
   background-color: var(--primary-background);
 }
 html, #root, .app{
@@ -36,6 +39,7 @@ main{
 a{
   text-decoration: none;
   font-weight: bold;
+  color: var(--primary-color);
 }
 a:hover{
   color: var(--primary-color-hover);
