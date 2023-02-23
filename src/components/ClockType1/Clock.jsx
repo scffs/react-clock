@@ -6,8 +6,6 @@ import './Clock.css';
 
 const ClockType1 = () => {
     const getTime = useTime();
-    // TODO: Лог ниже выводится дважды, надо пофиксить.
-    console.log(getTime);
 
     return (
         <div className="clock">

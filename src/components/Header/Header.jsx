@@ -11,7 +11,7 @@ const Header = () => {
                 fontSize: '2rem',
             }}
         >
-            React Clock
+            <h2>React Clock</h2>
             <ul>
                 <li>
                     <Link to='/type1'>Type 1</Link>

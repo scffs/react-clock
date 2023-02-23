@@ -19,7 +19,7 @@ const Layout = () => (
         <main style={{flex: '1 0 auto'}}>
             <Outlet />
         </main>
-        <Footer style={{flex: '0 0 auto'}} />
+        <Footer />
     </div>
 );
 
